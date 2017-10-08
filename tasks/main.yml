@@ -1,0 +1,15 @@
+- name: Copy LDAP-Client config
+  copy:
+    src: ldap.conf
+    dest: /etc/ldap/ldap.conf
+    owner: root
+    group: root
+    mode: "u=rw,g=r,o=r"
+
+- name: Copy certificate for LDAP
+  copy:
+    src: ldapCA.pem
+    dest: /etc/ssl/ldapCA.pem
+    owner: root
+    group: root
+    mode: "u=rw,g=r,o=r"
