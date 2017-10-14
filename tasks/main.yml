@@ -1,4 +1,4 @@
-- name: Copy LDAP-Client config
+- name: Copy LDAP client config
   template:
     src: ldap.conf
     dest: /etc/ldap/ldap.conf
