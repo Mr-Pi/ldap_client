@@ -5,11 +5,3 @@
     owner: root
     group: root
     mode: 0644
-
-- name: Copy certificate for LDAP
-  copy:
-    src: ldapCA.pem
-    dest: /etc/ssl/ldapCA.pem
-    owner: root
-    group: root
-    mode: 0644
