@@ -1,6 +1,6 @@
 # ldap-client
 
-This role copies the client certificate and `ldap.conf` to the correct positions - ready to use the old stuvus LDAP.
+This role configures `ldap.conf` to use the old faveve LDAP.
 
 ## Requirements
 
