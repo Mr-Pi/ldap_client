@@ -1,0 +1,46 @@
+---
+ldap_client_base: dc=faveve, dc=uni-stuttgart, dc=de
+ldap_client_uris:
+  - "ldaps://ldap01.faveve.uni-stuttgart.de/"
+ldap_client_ldap_version: 3
+ldap_client_pam_password: crypt
+ldap_client_tls_cacert: /etc/ssl/certs/ca-certificates.crt
+ldap_client_tls_cacertdir: /etc/ssl/certs
+ldap_client_tls_reqcert: demand
+ldap_client_nss_initgroups_ignoreusers:
+  - backup
+  - bin
+  - daemon
+  - games
+  - gnats
+  - irc
+  - landscape
+  - libuuid
+  - list
+  - lp
+  - mail
+  - man
+  - messagebus
+  - news
+  - ntp
+  - proxy
+  - root
+  - root-afaul
+  - root-fkretschmer
+  - root-jochs
+  - root-joshi
+  - root-mdornbach
+  - root-mpaul
+  - root-nguyen
+  - root-sgaiser
+  - root-tczempik
+  - smmsp
+  - smmta
+  - sshd
+  - statd
+  - sync
+  - sys
+  - syslog
+  - uucp
+  - whoopsie
+  - www-data
