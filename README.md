@@ -16,7 +16,7 @@ None.
 | `ldap_client_pam_password`               | `crypt`                                      | PAM password method                                                                                                                                                            |
 | `ldap_client_tls_cacert`                 | `/etc/ssl/certs/ca-certificates.crt`         | Path to the CA certificate to check against                                                                                                                                    |
 | `ldap_client_tls_cacertdir`              | `/etc/ssl/certs`                             | Directory where single CA certificates are placed (this is checked if `ldap_client_tls_cacert` doesn't work)                                                                   |
-| `ldap_client_reqcert`                    | `demand`                                     | Method of checking the CA cert (`never`, `allow` (allow no cert, checking and bad certs), `try` (no cert or valid certs are allowed), `demand` (valid certificate is required) |
+| `ldap_client_tls_reqcert`                | `demand`                                     | Method of checking the CA cert (`never`, `allow` (allow no cert, checking and bad certs), `try` (no cert or valid certs are allowed), `demand` (valid certificate is required) |
 | `ldap_client_nss_initgroups_ignoreusers` | _see [defaults/main.yml](defaults/main.yml)_ | List of users that should never be queried to LDAP (`nss_ldap` module is necessary)                                                                                            |
 
 ## Example Playbook
